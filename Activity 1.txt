@@ -1,0 +1,76 @@
+# Python Program to Print Hello world!
+print("Hello World!")
+
+# Python Program to Add Two Numbers
+a=5
+b=8
+result = a+b
+print('The sum of {} and {} is {}'.format(a,b,result))
+
+# Python Program to Find the Square Root
+number=26
+square_root = number**0.5
+print('The square root of %0.4f is %0.4f'%(number,square_root))
+
+# Python Program to Calculate the Area of a Triangle
+a=5
+b=9
+c=7
+s=(a+b+c)/2
+area=(s*(s-a)*(s-b)*(s-c))**0.5
+print('The area of triangle is %0.3f'%area)
+
+#5.Python Program to Solve Quadratic Equation
+# cmath module to perform complex square root
+#{} are placeholders and we can specify the order in which they are printed by using numbers(tuple index)
+import cmath
+a=1
+b=5
+c=6
+d=((b**2)-(4*a*c))
+Quadratic_eq1=(-b-cmath.sqrt(d))/(2*a)
+Quadratic_eq2=(-b+cmath.sqrt(d))/(2*a)
+print('The solution are {} and {}'.format(Quadratic_eq1,Quadratic_eq2))
+
+
+#6.Python Program to Swap Two Variables
+a=5
+b=3
+temp=a
+a=b
+b=temp
+print(a)
+print(b)
+
+#6.Python Program to Swap Two Variables without using third variable
+a = 2
+b = 3
+print("Before swapping:")
+print("Value of a :",a,"and","value of b :",b)
+a,b = b,a
+print("After swapping:")
+print("Value of a :",a,"and","value of b :",b)
+
+#7.Python Program to Generate a Random Number
+import random
+print(random.randint(1,10))
+
+#8.Python Program to Convert Kilometers to Miles
+# 1km = 0.621371 miles
+kilometers = float(input("Enter the value in kilometers"))
+conv_factor = 0.621371
+miles = kilometers*conv_factor
+print(miles)
+
+#9.Python Program to Convert Celsius To Fahrenheit
+celsius = 28.5
+fahrenheit = (celsius*1.8)+32
+print('%0.1f degree celsius is equal to %0.1f degree fahrenheit'%(celsius,fahrenheit))
+
+
+#10.Python Program to Print Output Without a Newline
+print("Monith", end=" ")
+print("you are so adamant")
+
+
+
